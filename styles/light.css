@@ -1,12 +1,22 @@
 /*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
+  переключая темуru
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --color-f: #343430;
+  --background-color-text: #ff8dcb;
+  --accent-color: #ff0070;
+  --text-color: var(--color-f);
+  --shadow-color: var(--color-f);
+  --section-color: var(--color-f);
+  --text-clr: var(--text-color);
+  --title-color: #ffc2e6;
+  --color-rec: #fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+  --hover-color: var(--shadow-color);
+  --text-button: var(--section-color);
+  --link-shadow: var(--title-color);
+  --corner-color: var(--color-f);
 }
