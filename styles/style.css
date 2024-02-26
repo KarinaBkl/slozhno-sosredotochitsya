@@ -18,7 +18,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-size: var(--size-text, 18px);
   font-family: var(--family-text, sans-serif);
-
   background: var(--background-image) no-repeat center;
   background-color: var(--background-color);
   transition-duration: 0.3ms;
@@ -29,6 +28,7 @@
 
 .header {
   position: relative;
+  width: 100vw;
 }
 
 .header__theme-menu-list {
@@ -67,8 +67,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--corner-color);
-  border-bottom: 1px solid var(--corner-color);
+  border-inline-start: 1px solid var(--corner-color);
+  border-block-end: 1px solid var(--corner-color);
   left: 20px;
   bottom: 20px;
 }
@@ -78,8 +78,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-right: 1px solid var(--corner-color);
-  border-top: 1px solid var(--corner-color);
+  border-inline-end: 1px solid var(--corner-color);
+  border-block-start: 1px solid var(--corner-color);
   right: 20px;
   top: 20px;
 }
@@ -106,7 +106,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--hover-color);
+  border-block-end: 1px solid var(--hover-color);
   outline: none;
 }
 
@@ -415,6 +415,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 768px;
+  width: 100vw;
 }
 
 @media (768px <= width < 1024px) {
