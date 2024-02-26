@@ -30,7 +30,7 @@
 .header {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .header__theme-menu-list {
@@ -416,19 +416,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 768px;
-  width: 100%;
+  min-height: 768px;
 }
 
 @media (768px <= width < 1024px) {
   .footer {
-    max-height: 1024px;
+  min-height: 1024px;
   }
 }
 
 @media (375px <= width < 768px) {
   .footer {
-    max-height: 657px;
+    min-height: 657px;
     font-size: var(--size-title-mb);
   }
 }
