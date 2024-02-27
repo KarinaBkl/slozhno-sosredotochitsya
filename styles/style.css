@@ -28,6 +28,7 @@
 .header {
   position: relative;
   width: 100%;
+  min-height: 768px;
   height: 100vh;
 }
 
@@ -441,14 +442,14 @@
   position: relative;
   display: grid;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   min-height: 768px;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
- margin-block-end: 40px;
+  margin-block-end: 40px;
 }
 
 @media (768px <= width < 1024px) {
