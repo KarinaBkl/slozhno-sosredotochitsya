@@ -5,18 +5,37 @@
 */
 
 .page.theme_light {
-  --color-f: #343430;
+  --color-main: #343430;
   --background-color-text: #ff8dcb;
   --accent-color: #ff0070;
-  --text-color: var(--color-f);
-  --shadow-color: var(--color-f);
-  --section-color: var(--color-f);
-  --text-clr: var(--text-color);
+  --text-color: var(--color-main);
+  --shadow-color: var(--color-main);
+  --section-color: var(--color-main);
+  --text-color-content: var(--text-color);
   --title-color: #ffc2e6;
   --color-rec: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
   --hover-color: var(--shadow-color);
   --text-button: var(--section-color);
-  --link-shadow: var(--title-color);
-  --corner-color: var(--color-f);
+  --link-shadow: var(--background-color-text);
+  --corner-color: var(--color-main);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-main: #343430;
+    --background-color-text: #ff8dcb;
+    --accent-color: #ff0070;
+    --text-color: var(--color-main);
+    --shadow-color: var(--color-main);
+    --section-color: var(--color-main);
+    --text-color-content: var(--text-color);
+    --title-color: #ffc2e6;
+    --color-rec: #fff1f7;
+    --background-image: url(../images/cover-image-light.png);
+    --hover-color: var(--shadow-color);
+    --text-button: var(--section-color);
+    --link-shadow: var(--background-color-text);
+    --corner-color: var(--color-main);
+  }
 }

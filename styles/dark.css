@@ -5,19 +5,39 @@
 */
 
 .page.theme_dark {
-  --color-f: #ff0070;
-  --accent-color: var(--color-f);
-  --section-color: var(--color-f);
-  --shadow-color: var(--color-f);
+  --color-main: #ff0070;
+  --accent-color: var(--color-main);
+  --section-color: var(--color-main);
+  --shadow-color: var(--color-main);
   --text-button: var(--section-color);
   --background-color-text: var(--accent-color);
   --text-color: #000028;
-  --text-clr: #f1b2ce;
+  --text-color-content: #f1b2ce;
   --color-rec: var(--accent-color);
   --title-color: #db00ff;
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
-  --hover-color: var(--shadow-color);
-  --link-shadow: var(--color-f);
-  --corner-color: var(--color-f);
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --link-shadow: var(--color-main);
+  --corner-color: var(--color-main);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-main: #ff0070;
+    --accent-color: var(--color-main);
+    --section-color: var(--color-main);
+    --shadow-color: var(--color-main);
+    --text-button: var(--section-color);
+    --background-color-text: var(--accent-color);
+    --text-color: #000028;
+    --text-color-content: #f1b2ce;
+    --color-rec: var(--accent-color);
+    --title-color: #db00ff;
+    --background-image: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+    --hover-color: rgba(255, 0, 112, 0.4);
+    --link-shadow: var(--color-main);
+    --corner-color: var(--color-main);
+  }
 }
