@@ -15,7 +15,7 @@
   --title-color: #ffc2e6;
   --color-rec: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-  --hover-color: var(--shadow-color);
+  --hover-color: rgba(50, 49, 45, 0.4);
   --text-button: var(--section-color);
   --link-shadow: var(--background-color-text);
   --corner-color: var(--color-main);
@@ -33,7 +33,7 @@
     --title-color: #ffc2e6;
     --color-rec: #fff1f7;
     --background-image: url(../images/cover-image-light.png);
-    --hover-color: var(--shadow-color);
+    --hover-color:  rgba(50, 49, 45, 0.4);
     --text-button: var(--section-color);
     --link-shadow: var(--background-color-text);
     --corner-color: var(--color-main);
