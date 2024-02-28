@@ -39,14 +39,14 @@
 }
 
 .header__theme-menu {
-  margin-block-start: 20px;
+  padding-block-start: 20px;
 }
 
 .header__rec {
   position: absolute;
   color: var(--color-rec);
   text-transform: uppercase;
-  top: 0;
+  top: 20px;
   right: 50px;
 }
 
@@ -71,7 +71,7 @@
   border-inline-start: 1px solid var(--corner-color);
   border-block-end: 1px solid var(--corner-color);
   left: 20px;
-  bottom: 40px;
+  bottom: 20px;
 }
 
 .decorated-zone::after {
@@ -82,7 +82,7 @@
   border-inline-end: 1px solid var(--corner-color);
   border-block-start: 1px solid var(--corner-color);
   right: 20px;
-  top: 0;
+  top: 20px;
 }
 
 .header__theme-menu-button {
@@ -145,7 +145,7 @@
 
 @media (375px <= width < 768px) {
   .header {
-    min-height: 658px;
+    min-height: 668px;
   }
 }
 
@@ -200,23 +200,16 @@
   }
 }
 
-@media (768px <= width < 1024px) {
-  .decorated-zone::before {
-    left: 20px;
-    bottom: 40px;
-  }
-}
-
 @media (375px <= width < 768px) {
   .decorated-zone::before {
     left: 10px;
-    bottom: 30px;
+    bottom: 10px;
   }
 }
 
 @media (375px <= width < 768px) {
   .decorated-zone::after {
-    top: -10px;
+    top: 10px;
     right: 10px;
   }
 }
@@ -224,14 +217,14 @@
 @media (375px <= width < 768px) {
   .header__rec {
     right: 40px;
-    top: -10px;
+    top: 10px;
   }
 }
 
 /* MAIN */
 
 .content {
-  padding: 40px 20px 85px;
+  padding: 60px 20px 65px;
   color: var(--text-color-content);
 }
 
@@ -284,13 +277,13 @@
 
 @media (768px <= width < 1024px) {
   .content {
-    padding: 40px 20px 80px;
+    padding-block-end: 58px;
   }
 }
 
 @media (375px <= width < 768px) {
   .content {
-    padding: 20px 10px 60px;
+    padding: 40px 10px;
   }
 }
 
@@ -440,7 +433,7 @@
 
 .footer {
   position: relative;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 768px;
@@ -449,7 +442,7 @@
 
 .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
-  margin-block-end: 40px;
+ /* margin-block-end: 40px; */
 }
 
 @media (768px <= width < 1024px) {
@@ -467,14 +460,12 @@
 
 @media (768px <= width < 1024px) {
   .footer__title {
-    margin-block-end: 35px;
     line-height: 99px;
   }
 }
 
 @media (375px <= width < 768px) {
   .footer__title {
-    margin-block-end: 30px;
     line-height: 95.7px;
   }
 }
